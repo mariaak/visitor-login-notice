@@ -108,7 +108,7 @@ if ( ! class_exists( 'Login_Notice' ) ) {
                 return false;
             }
 
-            include( TS_VLN_PATH . '/views/notice-template.php' );
+            include( TS_VLN_PATH . '/views/login-notice-view.php' );
         }
 	}
 
