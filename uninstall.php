@@ -28,3 +28,10 @@
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+
+// Remove plugin options
+delete_option( 'vln_options' );
+
+// Unset cookie
+unset($_COOKIE['visitor_login_notice_cookie']);
+setcookie('visitor_login_notice_cookie', '', time() - ( 60 * 60 ), '/' );

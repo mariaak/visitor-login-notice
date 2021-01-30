@@ -1,5 +1,5 @@
 === Visitor Login Notice ===
-Contributors: giannis4, mariaak
+Contributors: mariaak, giannis4
 Tags: login notice, login reminder, login
 Requires at least: 5.3
 Tested up to: 5.3

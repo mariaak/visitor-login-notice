@@ -2,19 +2,17 @@
 /**
  * Visitor Login Notice
  *
- * Displays a notice to non-logged in users reminding them to login to your website.
+ * Displays a notice to non-logged in users reminding them to login/register to your website.
  *
- * @link              https://gianniskipouros.com
  * @since             1.0.0
  * @package           Visitor_Login_Notice
  *
  * @wordpress-plugin
  * Plugin Name:       Visitor Login Notice
- * Plugin URI:        https://gianniskipouros.com
- * Description:       Display a notice to non-logged in users reminding them to login to your website.
+ * Description:       Display a notice to non-logged in users reminding them to login/register to your website.
  * Version:           1.0.0
- * Author:            Giannis Kipouros for 2squared.io
- * Author URI:        https://gianniskipouros.com
+ * Author:            Maria Akritidou <maria@2squared.io>
+ * Author URI:        https://github.com/mariaak
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       login-notice
@@ -61,16 +59,18 @@ if ( ! defined( 'TS_VLN_BASE_NAME' ) ) {
 /**
  * Include files.
  */
-function gkco_include_plugin_files() {
+function vln_include_plugin_files() {
 
-	// Include Class files
+	// Include application files
 	$files = array(
-	    'app/class-login-notice'
+        'app/class-login-notice-options',
+	    'app/class-login-notice',
+        'app/admin/class-login-notice-admin'
 	);
 
-	// Include Includes files
+	// Include libraries
 	$includes = array(
-
+        'includes/helpers'
 	);
 
 	// Merge arrays
@@ -81,4 +81,4 @@ function gkco_include_plugin_files() {
 	}
 }
 
-add_action( 'plugins_loaded', 'gkco_include_plugin_files' );
+add_action( 'plugins_loaded', 'vln_include_plugin_files' );
