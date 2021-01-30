@@ -16,8 +16,9 @@ Visitor Login Notice plugin displays a notice to non-logged in user reminding th
 
 == Installation ==
 
-1. Upload "Visitor Login Notice" plugin into the directory `wp-content/plugins/`.
-2. Enable "Visitor Login Notice" plugin.
+1. Upload the "Visitor Login Notice" plugin into the `wp-content/plugins/` directory or install the .zip via the WP plugins panel in your Wordpress admin dashboard.
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. That's it! You should now be able to access the Plugin's options via `Visitor Login Notice` link under Settings on the WordPress dashboard menu.
 
 == Frequently Asked Questions ==
 
