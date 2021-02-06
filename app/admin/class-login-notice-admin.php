@@ -342,7 +342,7 @@ if ( ! class_exists( 'Login_Notice_Admin' ) ) {
         public function vln_allow_close_cb() {
 
             echo "<input type='checkbox' name='vln_options[allow_close]' value='1' " . ( ! empty( $this->options['allow_close'] ) ? "checked='checked'" : '' ) . ">" . __( 'Check to display a close button', 'login-notice' ) .
-                 "<div class='vln-important-note'>" . __( '<b>Important note</b>: To support the close button functionality and retain the user\'s choice, a cookie is created and stored on the user\'s browser. When the cookie is present, the notice will appear again on that browser. The cookie expiration time is set to 365 days. Please consider including this information to your privacy policy.', 'login-notice' ) . "</div>";
+                 "<div class='vln-important-note'>" . __( '<b>Important note</b>: To support the close button functionality and retain the user\'s choice, a cookie is created and stored on the user\'s browser. When the cookie is present, the notice will not appear again on that browser. The cookie expiration time is set to 365 days. Please consider including this information to your privacy policy.', 'login-notice' ) . "</div>";
         }
 
         public function vln_close_trigger_class_cb() {
